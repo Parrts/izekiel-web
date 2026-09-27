@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8th Mensiversary 💙</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MUSIC -->
+    <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button class="music-btn" onclick="toggleMusic()" id="musicButton">
+        🎵
+    </button>
+
+    <!-- FLOATING HEARTS -->
+    <div class="hearts"></div>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
+
+        <div class="hero-content">
+
+            <p class="small-text">a little celebration for us</p>
+
+            <h1>
+                Happy 8th<br>
+                <span>Mensiversary</span>
+            </h1>
+
+            <div class="date">
+                28 January — 28 September
+            </div>
+
+            <p class="intro">
+                eight months of little moments,<br>
+                any conversations, memories,<br>
+                and choosing each other every day.
+            </p>
+
+            <a href="#memories" class="button">
+                our little memories ↓
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- MEMORIES -->
+    <section class="memories" id="memories">
+
+        <p class="section-label">little pieces of us</p>
+
+        <h2>our memories</h2>
+
+        <p class="section-desc">
+            click the pictures ♡
+        </p>
+
+        <div class="photo-container">
+
+            <div class="polaroid rotate-left" onclick="openPhoto('foto1.jpg')">
+                <img src="foto1.jpg" alt="Our memory">
+                <p>the beginning ♡</p>
+            </div>
+
+            <div class="polaroid rotate-right" onclick="openPhoto('foto2.jpg')">
+                <img src="foto2.jpg" alt="Our memory">
+                <p>favorite moment</p>
+            </div>
+
+            <div class="polaroid rotate-small" onclick="openPhoto('foto3.jpg')">
+                <img src="foto3.jpg" alt="Our memory">
+                <p>just us</p>
+            </div>
+
+            <div class="polaroid rotate-left2" onclick="openPhoto('foto4.jpg')">
+                <img src="foto4.jpg" alt="Our memory">
+                <p>another little memory</p>
+            </div>
+
+            <div class="polaroid rotate-right2" onclick="openPhoto('foto5.jpg')">
+                <img src="foto5.jpg" alt="Our memory">
+                <p>still my favorite</p>
+            </div>
+
+            <div class="polaroid rotate-small2" onclick="openPhoto('foto6.jpg')">
+                <img src="foto6.jpg" alt="Our memory">
+                <p>eight months ♡</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LETTER -->
+    <section class="letter">
+
+        <div class="letter-box">
+
+            <p class="section-label">a letter for mbul</p>
+
+            <h2>for my zee, always.</h2>
+
+            <p>
+                happy mensiversary yang ke-8 cantik,
+                udah banyak yang kita laluin selama ini.
+                conversation? some moments bitter and sweet?
+                tapi sama kamu selalu sweet sih sayang 
+                dan aku selalu bersyukur buat itu, bersyukur kamu udah ada di kehidupan aku, 
+                bawa banyak warna buat aku. oh god how i love you ze, so bad.
+            </p>
+
+            <p>
+                thank you for being someone i can share
+                both the ordinary and special moments with.
+                thank you for staying, for understanding,
+                and for making every months feel meaningful as you baobei.
+            </p>
+
+            <p>
+                i don't know exactly what the next months will bring,
+                but i hope we get to fill them with more memories, and more little moments that belong to us.
+            </p>
+
+            <div class="signature">
+                eyan, yours ♡
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+    <section class="final">
+
+        <div class="stars">✦　⋆　✧　⋆　✦</div>
+
+        <h2>
+            eight months,<br>
+            with you.
+        </h2>
+
+        <p>
+            and if i could choose again,<br>
+            i'd still choose you.
+        </p>
+
+        <div class="heart">♡</div>
+
+    </section>
+
+
+    <!-- IMAGE MODAL -->
+    <div class="modal" id="photoModal" onclick="closePhoto()">
+
+        <span class="close">&times;</span>
+
+        <img id="modalImage" src="" alt="Memory">
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
